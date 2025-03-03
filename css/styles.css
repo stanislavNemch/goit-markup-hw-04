@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 h1,
 h2,
 h3,
@@ -68,6 +78,7 @@ nav-list {
 }
 
 .features-title {
+  margin-top: 8px;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
@@ -81,6 +92,21 @@ nav-list {
   font-size: 16px;
   line-height: 1.5;
   color: #434455;
+}
+
+.features-width-li {
+  flex-basis: calc((100% - 3 * 16px) / 3);
+}
+
+.features-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4fd;
+  width: 264px;
+  height: 112px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
 }
 
 .logo {
@@ -252,10 +278,6 @@ button:focus {
   column-gap: 24px;
   flex-wrap: wrap;
   row-gap: 48px;
-}
-
-.features-width-li {
-  flex-basis: calc((100% - 3 * 16px) / 3);
 }
 
 .projects-width-li {
