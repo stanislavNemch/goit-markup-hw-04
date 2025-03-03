@@ -289,12 +289,36 @@ button:focus {
   gap: 24px;
 }
 
-.social-block-list .media-link {
+.media-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.media-link:hover,
+.media-link:focus {
+  background-color: rgba(
+    33,
+    150,
+    243,
+    0.1
+  ); /* Колір фону при ховері або фокусі */
+}
+
+.team-media-icon {
+  width: 20px;
+  height: 20px;
+  fill: #212121; /* Колір іконки в звичайному стані */
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.media-link:hover .team-media-icon,
+.media-link:focus .team-media-icon {
+  fill: #2196f3; /* Колір іконки при ховері або фокусі */
 }
 
 .projects-container {
