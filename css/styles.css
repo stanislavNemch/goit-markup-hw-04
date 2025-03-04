@@ -255,8 +255,7 @@ button:focus {
 }
 
 .team {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 156px;
   background-color: #f4f4fd;
 }
 
@@ -265,18 +264,28 @@ button:focus {
 }
 
 .team-list {
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
+  width: 264px;
+  height: 428px;
   background-color: #ffffff;
-  border-radius: 0px 0px 4px 4px;
   text-align: center;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-list-block {
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 8px;
 }
 
 .team-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   gap: 24px;
 }
 
@@ -285,8 +294,7 @@ button:focus {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  flex-shrink: 0;
-  gap: 24px;
+  gap: 8px;
 }
 
 .media-link {
@@ -301,24 +309,14 @@ button:focus {
 
 .media-link:hover,
 .media-link:focus {
-  background-color: rgba(
-    33,
-    150,
-    243,
-    0.1
-  ); /* Колір фону при ховері або фокусі */
+  background-color: #2196f3;
+  --color4: #ffffff;
 }
 
 .team-media-icon {
   width: 20px;
   height: 20px;
-  fill: #212121; /* Колір іконки в звичайному стані */
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.media-link:hover .team-media-icon,
-.media-link:focus .team-media-icon {
-  fill: #2196f3; /* Колір іконки при ховері або фокусі */
 }
 
 .projects-container {
