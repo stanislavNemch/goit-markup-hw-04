@@ -371,14 +371,16 @@ button:focus {
     justify-content: start;
     align-items: center;
     flex-direction: row;
-    gap: 8px;
 }
 
 .footer-block-logo {
-    width: 264px;
-    height: 112px;
     margin-right: 120px;
+    height: 112px;
     padding: 0;
+}
+
+.footer-block-icon {
+    height: 112px;
 }
 
 .visually-hidden {
