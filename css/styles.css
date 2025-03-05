@@ -128,6 +128,7 @@ nav-list {
     height: 112px;
     border: 1px solid #8e8f99;
     border-radius: 4px;
+    margin-bottom: 8px;
 }
 
 .logo {
@@ -199,25 +200,18 @@ a:focus {
 
 .hero {
     position: relative;
-    background-image: url("../images/people-office-1.jpg");
-    padding: 188px 0 188px;
+    background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-1.jpg);
     letter-spacing: 0.02em;
     text-align: center;
     height: 600px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.hero .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+    max-width: 1440px;
 }
 
 .hero-title {
@@ -247,6 +241,7 @@ a:focus {
     border: none;
     border-radius: 4px;
     margin: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero button:hover,
@@ -264,15 +259,42 @@ button:focus {
     margin-bottom: 72px;
 }
 
-.portfolio {
+.portfolio-section {
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
-.portfolio-text-block {
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
+.portfolio-section .portfolio-list li {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-section .portfolio-list li:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-section .portfolio-list li .portfolio-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-section .portfolio-list li .portfolio-container p {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color, #f4f4fd);
+    padding: 40px 32px;
+    background-color: #4d5ae5;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-section .portfolio-list li:hover .portfolio-container p {
+    transform: translateY(0%);
 }
 
 .team {
@@ -310,37 +332,44 @@ button:focus {
     gap: 24px;
 }
 
-.social-block-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+.social-section {
+    padding-bottom: 32px;
 }
 
-.media-link {
+.social-section .social-list {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
+    gap: 24px;
+}
+
+.social-section .social-list li {
+    width: 40px;
+    height: 40px;
+}
+
+.social-section .social-list li a {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color, #4d5ae5);
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.media-link:hover,
-.media-link:focus {
-    background-color: #2196f3;
-    --color4: #ffffff;
+.social-section .social-list li a:hover,
+.social-section .social-list li a:focus {
+    background-color: #404bbf;
 }
 
-.team-media-icon,
-.footer-media-icon {
-    width: 20px;
-    height: 20px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.social-section .social-list li a svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--icon-color, #f4f4fd);
 }
 
-.projects-container {
+.portfolio-list {
     column-gap: 24px;
     flex-wrap: wrap;
     row-gap: 48px;
