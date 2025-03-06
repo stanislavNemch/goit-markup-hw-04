@@ -279,9 +279,9 @@ a:focus {
     height: 428px;
     overflow: hidden;
     background-color: #ffffff;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 1px 3px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-block img {
@@ -328,6 +328,39 @@ a:focus {
     width: 20px;
     height: 20px;
     fill: var(--icon-color, #f4f4fd); /* Встановлення кольору іконки */
+}
+
+.team-list-block .social-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.team-list-block .social-item {
+    width: 40px;
+    height: 40px;
+}
+
+.team-list-block .social-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color4, #4d5ae5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-list-block .social-link:hover,
+.team-list-block .social-link:focus {
+    background-color: #404bbf;
+}
+
+.team-list-block .social-icon {
+    width: 16px;
+    height: 16px;
+    fill: var(--icon-color, #f4f4fd);
 }
 
 .section-title {
@@ -483,4 +516,54 @@ a:focus {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-block-logo {
+    margin-right: 120px;
+}
+
+.footer-block-icon .footer-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.footer-block-icon .social-list {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-block-icon .social-item {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-block-icon .social-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color4, #4d5ae5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-block-icon .social-link:hover,
+.footer-block-icon .social-link:focus {
+    background-color: #31d0aa;
+}
+
+.footer-block-icon .social-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--icon-color, #f4f4fd);
 }
