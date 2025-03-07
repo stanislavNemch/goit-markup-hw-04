@@ -370,7 +370,7 @@ a:focus {
     row-gap: 48px;
 }
 
-.projects-width-li {
+.portfolio-item {
     width: calc((100% - 48px) / 3);
 }
 
