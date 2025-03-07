@@ -44,8 +44,7 @@ h2 {
     font-size: 36px;
 }
 
-ul,
-nav-list {
+ul {
     list-style-type: none;
     padding: 0px;
     margin: 0;
@@ -264,11 +263,6 @@ a:focus {
     text-align: center;
 }
 
-.team-img {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
 .team-list-li {
     background-color: #ffffff;
     border-radius: 0px 0px 4px 4px;
@@ -411,21 +405,10 @@ a:focus {
     max-width: 264px;
 }
 
-.footer-title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #fff;
-}
-
 .footer-block-logo {
     margin-right: 120px;
     height: 112px;
     padding: 0;
-}
-
-.footer-block-logo {
-    margin-right: 120px;
 }
 
 .block-footer .footer-title {
