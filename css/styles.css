@@ -99,13 +99,18 @@ nav-list {
 }
 
 .features-title {
-    margin-top: 8px;
     margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+}
+
+.features-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .features-width-li {
@@ -250,6 +255,14 @@ a:focus {
 
 .team {
     background-color: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.features-team-block {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
 }
 
 .team-img {
@@ -257,35 +270,20 @@ a:focus {
     padding-bottom: 32px;
 }
 
-.team-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    flex-direction: row;
-    gap: 24px;
-}
-
-.team-list-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+.team-list-li {
     background-color: #ffffff;
+    border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
 }
 
-.social-list {
+.ul-flex-block {
     display: flex;
     justify-content: center;
     gap: 24px;
 }
 
-.team-list-block .social-item {
+.social-item {
     width: 40px;
     height: 40px;
 }
@@ -304,8 +302,8 @@ a:focus {
     transition-delay: 0;
 }
 
-.team-list-block .social-link:hover,
-.team-list-block .social-link:focus {
+.team-list-li .social-link:hover,
+.team-list-li .social-link:focus {
     background-color: #404bbf;
 }
 
@@ -318,7 +316,7 @@ a:focus {
 }
 
 .section-title {
-    line-height: 40px;
+    font-size: 36px;
     text-align: center;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -417,6 +415,7 @@ a:focus {
     justify-content: start;
     align-items: center;
     flex-direction: row;
+    align-items: baseline;
 }
 
 .footer-block-logo {
@@ -427,11 +426,6 @@ a:focus {
 
 .footer-block-icon {
     height: 112px;
-}
-
-.footer-container {
-    display: flex;
-    align-items: baseline;
 }
 
 .footer-block-logo {
@@ -447,7 +441,7 @@ a:focus {
     margin-bottom: 16px;
 }
 
-.block-footer .social-list {
+.block-footer .ul-flex-block {
     display: flex;
     gap: 16px;
 }
