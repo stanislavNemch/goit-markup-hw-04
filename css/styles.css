@@ -86,6 +86,7 @@ nav-list {
 
 .flex-block {
     display: flex;
+    align-items: baseline;
 }
 
 .features {
@@ -410,22 +411,10 @@ a:focus {
     color: #fff;
 }
 
-.footer-container {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: row;
-    align-items: baseline;
-}
-
 .footer-block-logo {
     margin-right: 120px;
     height: 112px;
     padding: 0;
-}
-
-.footer-block-icon {
-    height: 112px;
 }
 
 .footer-block-logo {
