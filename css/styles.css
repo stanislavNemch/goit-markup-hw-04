@@ -420,9 +420,10 @@ a:focus {
     margin-bottom: 16px;
 }
 
-.footer-block .ul-flex-block {
+.footer-block .footer-social-list {
     display: flex;
     gap: 16px;
+    padding: 0;
 }
 
 .footer-block .social-item {
